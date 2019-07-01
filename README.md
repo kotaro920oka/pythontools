@@ -1,2 +1,2 @@
 # pythontools
-small utilities by python3
+small utilities by python
