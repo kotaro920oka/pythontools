@@ -19,3 +19,14 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+
+import sys
+import urllib.parse
+
+if len(sys.argv) <= 1:
+	str = sys.stdin.readline().rstrip()
+else:
+    str = sys.argv[1]
+
+ans = urllib.parse.unquote(str)
+sys.stdout.write(ans)
